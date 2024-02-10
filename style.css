@@ -1,0 +1,156 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #eae0cf;
+    background-color: #63728f;
+    background-color: #6f7e92;
+
+    background-color: #84909f; /*favorite*/
+    background-color: #7e8b9a;
+    background-color: #79899c;
+    background-image: url(images/swanpond.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+    /* background-size: contain;
+    background-position: center; */
+    line-height: 1.35;
+    color: #51617d;
+    color: #202834;
+    color: #1e242f;
+    color: #25282e;
+    margin: 0;
+    padding: 3rem;
+}
+
+h1 {
+    font-size: 68px;
+    font-size: 90px;
+    font-style: italic;
+    margin-top: 0;
+    /* margin-bottom: 2rem; */
+    margin-bottom: 0;
+    color: #767f8f;
+    color: #485875;
+    color: #51617d;
+    /* color: #48566e; */
+    /* color: #434f64; */
+    text-align: right;
+    line-height: 1;
+}
+
+.subtitle {
+    text-align: right;
+    margin-top: 0;
+    font-size: 50px;
+    font-style: italic;
+    margin-bottom: 2rem;
+    color: #404959;
+}
+
+h2 {
+    font-size: 26px;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+    color: #404c62;
+    /* color: #444c5d; */
+}
+
+a {
+    color: #2a5c96;
+    color: #1d4f89;
+    color: #1f5180;
+    color: #194772;
+    color: #004f87;
+
+    color: #1a5799;
+    color: #3c6288;
+    /* color: #0f5496; */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #0e3d72;
+    color: #09355f;
+    color: #194772;
+
+    color: #0d3e73;
+
+    color: #315578;
+    color: #294d71;
+    color: #3c6288;
+    color: #34577a;
+    /* color: #305273; */
+}
+
+.container {
+    border-radius: 32px;
+    border-radius: 24px;
+    max-width: 960px;
+    max-width: 820px;
+    max-width: 780px;
+    margin: auto;
+    background-color: antiquewhite;
+    background-color: #e5dbca;
+    background-color: rgba(229, 219, 202, 0.5);
+    background-color: rgba(219, 208, 191, 0.5);
+    background-color: rgb(202 193 180 / 60%);
+    background-color: rgba(207, 199, 189, 0.7);
+    /* background-color: rgb(204 194 178 / 50%); */
+    /* background-color: rgba(229, 223, 212, 0.5); */
+    backdrop-filter: blur(.5px);
+    /* backdrop-filter: blur(1px); */
+
+    padding: 2.25rem 2.5rem;
+    padding: 2.25rem 3rem;
+    box-shadow: 10px 10px 120px rgb(0 0 0 / 75%);
+    box-shadow: 10px 10px 120px #595f67;
+    box-shadow: 10px 10px 120px #4b525a;
+    box-shadow: 10px 10px 120px rgba(75, 82, 90, 0.8), inset 10px 10px 120px #aba194;
+    /* box-shadow: 10px 10px 160px rgba(75, 82, 90, 0.7), inset 10px 10px 120px #aba194; */
+
+    /* box-shadow: 10px 10px 120px #3b4249; */
+
+    /* border: 1px solid #aea69c;
+    border: 1px solid rgb(162 155 147 / 80%); */
+}
+
+p:last-child {
+    margin-bottom: 0;
+}
+
+
+.title-image {
+    text-align: right;
+    margin-bottom: 2rem;
+    margin-bottom: 2.5rem;
+}
+
+.royalswan {
+    width: 360px;
+    border-radius: 8px;
+    margin-bottom: 0;
+}
+
+.image-credit {
+    font-size: 13px;
+    opacity: .75;
+    font-style: italic;
+    margin-top: 0;
+    word-break: break-all;
+    color: #25282e;
+    margin-top: -4px;
+}
+
+.copyrights p {
+    margin-bottom: 0;
+    display: inline-block;
+}
+
+.blog-author {
+    margin-top: .375rem;
+}

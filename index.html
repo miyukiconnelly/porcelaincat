@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RoyalSwan</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="images/swan-icon.png">
+</head>
+<body>
+    <div class="container">
+
+        <h1>RoyalSwan</h1>
+        <h2 class="subtitle">Internet</h2>
+        <div class="title-image">
+            <img class="royalswan" src="images/royalswan.jpg" alt="RoyalSwan">
+            <p class="image-credit">
+                <a href="https://liquidnight.tumblr.com/post/424814221/ss-longley-town-birds-or-my-lady-of-st" target="_blank" rel="noopener noreferrer">Image credit</a></p>
+        </div>
+
+        <section class="headstart">
+
+            <h2>How does the Internet Work?</h2>
+
+            <p>As a developer, it is important to have a solid understanding of what the internet is and how it works. It is the foundation upon which most modern software applications are built. In order to build effective, secure, and scalable applications and services, you need to have a solid understanding of how the internet works and how to leverage its power and connectivity.</p>
+
+            <p>In this article we will cover the basics of internet including what it is how it works, some basic concepts, terminology and some common protocols that are used to build applications and services on the internet.</p>
+            
+            <ol>
+                <li>
+                    <a href="#intro-internet">Introduction to the Internet</a>
+                </li>
+                <li>
+                    <a href="#overview">How the Internet Works: An Overview</a>
+                </li>
+                <li>
+                    <a href="#concepts">Basic Concepts and Terminology</a>
+                </li>
+                <li>
+                    <a href="#protocol-roles">The Role of Protocols in Internet</a>
+                </li>
+                <li>
+                    <a href="#ip-domains">Understanding IP Addresses and Domain Names</a>
+                </li>
+                <li>
+                    <a href="#http-and-https">Introduction to HTTP and HTTPS</a>
+                </li>
+                <li>
+                    <a href="#tcp-ip">Building Applications with TCP/IP</a>
+                </li>
+                <li>
+                    <a href="#ssl-tls">Securing Internet Communication with SSL/TLS</a>
+                </li>
+                <li>
+                    <a href="#future">The Future: Emerging Trends and Technologies</a>
+                </li>
+                <li>
+                    <a href="#conclusion">Conclusion</a>
+                </li>
+            </ol>
+
+            <p>We have a lot to cover, so let’s get started!</p>
+
+        </section>
+        
+        <section id="intro-internet">
+
+            <h2>Introduction to the Internet</h2>
+
+            <p>Before we learn what the Internet is, we need to understand what a Network is. A network is a group of computers or other devices which are connected to eachother. For example, you at your home might have a network of computers and devices. Your friend living next door might have a similar network of devices. Their neighbor might have a similar network of devices. All these networks when connected together form the internet.</p>
+
+            <p>The internet is a network of networks.</p>
+
+            <p>The internet was developed in the late 1960s by the United States Department of Defense as a means of creating a decentralized communication network that could withstand a nuclear attack. Over the years, it has evolved into a complex and sophisticated network that spans the globe.</p>
+
+            <p>Today, the internet is an essential part of modern life, used by billions of people around the world to access information, communicate with friends and family, conduct business, and much more. As a developer, it is essential to have a solid understanding of how the internet works and the various technologies and protocols that underpin it.</p>
+
+        </section>
+
+        <section id="overview">
+
+            <h2>How the Internet Works: An Overview</h2>
+
+            <p>At a high level, the internet works by connecting devices and computer systems together using a set of standardized protocols. These protocols define how information is exchanged between devices and ensure that data is transmitted reliably and securely.</p>
+
+            <p>The core of the internet is a global network of interconnected routers, which are responsible for directing traffic between different devices and systems. When you send data over the internet, it is broken up into small packets that are sent from your device to a router. The router examines the packet and forwards it to the next router in the path towards its destination. This process continues until the packet reaches its final destination.</p>
+
+            <p>To ensure that packets are sent and received correctly, the internet uses a variety of protocols, including the Internet Protocol (IP) and the Transmission Control Protocol (TCP). IP is responsible for routing packets to their correct destination, while TCP ensures that packets are transmitted reliably and in the correct order.</p>
+
+            <p>In addition to these core protocols, there are a wide range of other technologies and protocols that are used to enable communication and data exchange over the internet, including the Domain Name System (DNS), the Hypertext Transfer Protocol (HTTP), and the Secure Sockets Layer/Transport Layer Security (SSL/TLS) protocol. As a developer, it is important to have a solid understanding of how these different technologies and protocols work together to enable communication and data exchange over the internet.</p>
+
+        </section>
+
+        <section id="concepts">
+
+            <h2>Basic Concepts and Terminology</h2>
+
+            <p>To understand the internet, it’s important to be familiar with some basic concepts and terminology. Here are some key terms and concepts to be aware of:</p>
+
+            <ul>
+                <li><b>Packet</b>: A small unit of data that is transmitted over the internet.</li>
+
+                <li><b>Router</b>: A device that directs packets of data between different networks.</li>
+
+                <li><b>IP Address</b>: A unique identifier assigned to each device on a network, used to route data to the correct destination.</li>
+
+                <li><b>Domain Name</b>: A human-readable name that is used to identify a website, such as google.com.</li>
+
+                <li><b>DNS</b>: The Domain Name System is responsible for translating domain names into IP addresses.</li>
+
+                <li><b>HTTP</b>: The Hypertext Transfer Protocol is used to transfer data between a client (such as a web browser) and a server (such as a website).</li>
+
+                <li><b>HTTPS</b>: An encrypted version of HTTP that is used to provide secure communication between a client and server.</li>
+
+                <li><b>SSL/TLS</b>: The Secure Sockets Layer and Transport Layer Security protocols are used to provide secure communication over the internet.</li>
+            </ul>
+
+            <p>Understanding these basic concepts and terms is essential for working with the internet and developing internet-based applications and services.</p>
+
+        </section>
+
+        <section id="protocol-roles">
+
+            <h2>The Role of Protocols in Internet</h2>
+
+            <p>Protocols play a critical role in enabling communication and data exchange over the internet. A protocol is a set of rules and standards that define how information is exchanged between devices and systems.</p>
+
+            <p>There are many different protocols used in internet communication, including the Internet Protocol (IP), the Transmission Control Protocol (TCP), the User Datagram Protocol (UDP), the Domain Name System (DNS), and many others.</p>
+
+            <p>IP is responsible for routing packets of data to their correct destination, while TCP and UDP ensure that packets are transmitted reliably and efficiently. DNS is used to translate domain names into IP addresses, and HTTP is used to transfer data between clients and servers.</p>
+
+            <p>One of the key benefits of using standardized protocols is that they allow devices and systems from different manufacturers and vendors to communicate with each other seamlessly. For example, a web browser developed by one company can communicate with a web server developed by another company, as long as they both adhere to the HTTP protocol.</p>
+
+            <p>As a developer, it’s important to understand the various protocols used in internet communication and how they work together to enable the transfer of data and information over the internet.</p>
+
+        </section>
+
+        <section id="ip-domains">
+
+            <h2>Understanding IP Addresses and Domain Names</h2>
+
+            <p>IP addresses and domain names are both important concepts to understand when working with the internet.</p>
+
+            <p>An IP address is a unique identifier assigned to each device on a network. It’s used to route data to the correct destination, ensuring that information is sent to the intended recipient. IP addresses are typically represented as a series of four numbers separated by periods, such as “192.168.1.1”.</p>
+
+            <p>Domain names, on the other hand, are human-readable names used to identify websites and other internet resources. They’re typically composed of two or more parts, separated by periods. For example, “google.com” is a domain name. Domain names are translated into IP addresses using the Domain Name System (DNS).</p>
+
+            <p>DNS is a critical part of the internet infrastructure, responsible for translating domain names into IP addresses. When you enter a domain name into your web browser, your computer sends a DNS query to a DNS server, which returns the corresponding IP address. Your computer then uses that IP address to connect to the website or other resource you’ve requested.</p>
+
+        </section>
+
+        <section id="http-and-https">
+
+            <h2>Introduction to HTTP and HTTPS</h2>
+
+            <p>HTTP (Hypertext Transfer Protocol) and HTTPS (HTTP Secure) are two of the most commonly used protocols in internet-based applications and services.</p>
+
+            <p>HTTP is the protocol used to transfer data between a client (such as a web browser) and a server (such as a website). When you visit a website, your web browser sends an HTTP request to the server, asking for the webpage or other resource you’ve requested. The server then sends an HTTP response back to the client, containing the requested data.</p>
+            
+            <p>HTTPS is a more secure version of HTTP, which encrypts the data being transmitted between the client and server using SSL/TLS (Secure Sockets Layer/Transport Layer Security) encryption. This provides an additional layer of security, helping to protect sensitive information such as login credentials, payment information, and other personal data.</p>
+            
+            <p>When you visit a website that uses HTTPS, your web browser will display a padlock icon in the address bar, indicating that the connection is secure. You may also see the letters “https” at the beginning of the website address, rather than “http”.</p>
+
+        </section>
+
+        <section id="tcp-ip">
+
+            <h2>Building Applications with TCP/IP</h2>
+
+            <p>TCP/IP (Transmission Control Protocol/Internet Protocol) is the underlying communication protocol used by most internet-based applications and services. It provides a reliable, ordered, and error-checked delivery of data between applications running on different devices.</p>
+
+            <p>When building applications with TCP/IP, there are a few key concepts to understand:</p>
+
+            <ul>
+                <li><b>Ports</b>: Ports are used to identify the application or service running on a device. Each application or service is assigned a unique port number, allowing data to be sent to the correct destination.</li>
+
+                <li><b>Sockets</b>: A socket is a combination of an IP address and a port number, representing a specific endpoint for communication. Sockets are used to establish connections between devices and transfer data between applications.</li>
+
+                <li><b>Connections</b>: A connection is established between two sockets when two devices want to communicate with each other. During the connection establishment process, the devices negotiate various parameters such as the maximum segment size and window size, which determine how data will be transmitted over the connection.</li>
+
+                <li><b>Data transfer</b>: Once a connection is established, data can be transferred between the applications running on each device. Data is typically transmitted in segments, with each segment containing a sequence number and other metadata to ensure reliable delivery.</li>
+            </ul>
+
+            <p>When building applications with TCP/IP, you’ll need to ensure that your application is designed to work with the appropriate ports, sockets, and connections. You’ll also need to be familiar with the various protocols and standards that are commonly used with TCP/IP, such as HTTP, FTP (File Transfer Protocol), and SMTP (Simple Mail Transfer Protocol). Understanding these concepts and protocols is essential for building effective, scalable, and secure internet-based applications and services.</p>
+        </section>
+
+        <section id="ssl-tls">
+
+            <h2>Securing Internet Communication with SSL/TLS</h2>
+
+            <p>As we discussed earlier, SSL/TLS is a protocol used to encrypt data being transmitted over the internet. It is commonly used to provide secure connections for applications such as web browsers, email clients, and file transfer programs.</p>
+
+            <p>When using SSL/TLS to secure internet communication, there are a few key concepts to understand:</p>
+
+            <ul>
+                <li><b>Certificates</b>: SSL/TLS certificates are used to establish trust between the client and server. They contain information about the identity of the server and are signed by a trusted third party (a Certificate Authority) to verify their authenticity.</li>
+
+                <li><b></b>Handshake</b>: During the SSL/TLS handshake process, the client and server exchange information to negotiate the encryption algorithm and other parameters for the secure connection.</li>
+
+                <li><b>Encryption</b>: Once the secure connection is established, data is encrypted using the agreed-upon algorithm and can be transmitted securely between the client and server.</li>
+            </ul>
+
+            <p>When building internet-based applications and services, it’s important to understand how SSL/TLS works and to ensure that your application is designed to use SSL/TLS when transmitting sensitive data such as login credentials, payment information, and other personal data. You’ll also need to ensure that you obtain and maintain valid SSL/TLS certificates for your servers, and that you follow best practices for configuring and securing your SSL/TLS connections. By doing so, you can help protect your users’ data and ensure the integrity and confidentiality of your application’s communication over the internet.</p>
+
+        </section>.
+
+        <section id="future">
+
+            <h2>The Future: Emerging Trends and Technologies</h2>
+
+            <p>The internet is constantly evolving, and new technologies and trends are emerging all the time. As a developer, it’s important to stay up-to-date with the latest developments in order to build innovative and effective applications and services.</p>
+
+            <p>There are some of the emerging trends and technologies that are shaping the future of the internet:</p>
+
+            <ul>
+                <li><b>5G</b>: 5G is the latest generation of mobile network technology, offering faster speeds, lower latency, and greater capacity than previous generations. It is expected to enable new use cases and applications, such as autonomous vehicles and remote surgery.</li>
+
+                <li><b>Internet of Things (IoT)</b>: IoT refers to the network of physical devices, vehicles, home appliances, and other objects that are connected to the internet and can exchange data. As IoT continues to grow, it is expected to revolutionize industries such as healthcare, transportation, and manufacturing.</li>
+
+                <li><b>Artificial Intelligence (AI)</b>: AI technologies such as machine learning and natural language processing are already being used to power a wide range of applications and services, from voice assistants to fraud detection. As AI continues to advance, it is expected to enable new use cases and transform industries such as healthcare, finance, and education.</li>
+
+                <li><b>Blockchain</b>: Blockchain is a distributed ledger technology that enables secure, decentralized transactions. It is being used to power a wide range of applications, from cryptocurrency to supply chain management.</li>
+
+                <li><b>Edge computing</b>: Edge computing refers to the processing and storage of data at the edge of the network, rather than in centralized data centers. It is expected to enable new use cases and applications, such as real-time analytics and low-latency applications.</li>
+            </ul>
+
+            <p>By staying up-to-date with these and other emerging trends and technologies, you can ensure that your applications and services are built to take advantage of the latest capabilities and offer the best possible experience for your users.</p>
+
+        </section>
+
+        <section id="conclusion">
+
+            <h2>Conclusion</h2>
+
+            <p>And that brings us to the end of this article. We’ve covered a lot of ground, so let’s take a moment to review what we’ve learned:</p>
+
+            <ul>
+                <li>The internet is a global network of interconnected computers that uses a standard set of communication protocols to exchange data.</li>
+
+                <li>The internet works by connecting devices and computer systems together using standardized protocols, such as IP and TCP.</li>
+
+                <li>The core of the internet is a global network of interconnected routers that direct traffic between different devices and systems.</li>
+
+                <li>Basic concepts and terminology that you need to familiarize yourself with include packets, routers, IP addresses, domain names, DNS, HTTP, HTTPS, and SSL/TLS.</li>
+
+                <li>Protocols play a critical role in enabling communication and data exchange over the internet, allowing devices and systems from different manufacturers and vendors to communicate seamlessly.</li>
+            </ul>
+
+            <p>I hope you found this article useful. If you have any questions or comments, please feel free to leave them below. Thanks for reading!</p>
+
+        </section>
+        
+        <br>
+        <p>Source: <a href="https://cs.fyi/guide/how-does-internet-work" target="_blank" rel="noopener noreferrer">https://cs.fyi/guide/how-does-internet-work</a></p>
+
+        <hr>
+        <div class="copyrights">
+            <p><b><i>RoyalSwan</i></b> Copyrights 2024</p>
+            <p>at <a href="index.html">royalswan.net</a></p>
+        </div>
+        <p class="blog-author">Blogged by <a href="https://github.com/miyukiconnelly" target="_blank" rel="noopener noreferrer">Miyuki Connelly</a>, a passionate developer based in the USA.</p>
+    </div>
+</body>
+</html>
