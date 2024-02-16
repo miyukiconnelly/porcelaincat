@@ -3,27 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Romantically &ndash; The internet, explained &ndash; vox.com</title>
+    <title>PorcelainCat &ndash; The internet, explained (vox.com)</title>
     <link rel="stylesheet" href="../../style.css">
-    <link rel="icon" type="image/png" href="../../images/swan-icon.png">
+    <link rel="icon" type="image/png" href="../../images/cat-ceramicteapot.png">
 </head>
 <body>
     <div class="container">
 
-        <h1><a href="../../index.html">Romantically</a></h1>
+        <h1><a href="../../index.html">PorcelainCat</a></h1>
         <h2 class="subtitle">The Internet</h2>
 
         <div class="topic-nav">
             <h3 class="topic-nav-title">The internet</h3>
             <ul>
                 <li>
-                    <a href="1-how-does-the-internet-work.html">How does the Internet Work? &ndash; cs.fyi</a>
+                    <a href="1_how-does-the-internet-work.html">
+                        How does the Internet Work?
+                        <span class="source-site">(cs.fyi)</span>
+                    </a>
                 </li>
                 <li>
-                    <a href="2-the-internet-explained.html" class="active">The internet, explained &ndash; vox.com</a>
+                    <a href="2_the-internet-explained.html" class="active">
+                        The internet, explained
+                        <span class="source-site">(vox.com)</span>
+                    </a>
                 </li>
                 <li>
-                    <a href="3-how-does-the-internet-work.html">How does the Internet Work? &ndash; stanford.edu</a>
+                    <a href="3_how-does-the-internet-work.html">
+                        How does the Internet Work?
+                        <span class="source-site">(stanford.edu)</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="4_introduction-to-the-Internet.html">
+                        Introduction to the Internet
+                        <span class="source-site">(roadmap.sh)</span>
+                    </a>
+                    <ul>
+                        <li>
+                            <a href="4-1_dns-in-one-picture.html">
+                                DNS in One Picture
+                                <span class="source-site">(roadmap.sh)</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="4-2_a-cartoon-intro-to-dns-over-https.html">
+                                A cartoon intro to DNS over HTTPS
+                                <span class="source-site">(hacks.mozilla.org)</span>
+                            </a>
+                        </li>
+                    </ul>
                 </li>
             </ul>
         </div>
@@ -80,7 +109,7 @@
 
             <p>Former Vice President Al Gore is frequently quoted as claiming credit for the invention of the internet, but what he actually said in a 1999 CNN interview was “I took the initiative in creating the internet.” Gore was widely mocked for this statement. But the men who did invent the internet, TCP/IP designers Bob Kahn and Vint Cerf, wrote in Gore’s defense in 2000. They argue that Gore was “the first political leader to recognize the importance of the internet and to promote and support its development.”
 
-            <p>“As far back as the 1970s Congressman Gore promoted the idea of high speedtelecommunications,” the pair wrote. “As a Senator in the 1980s Gore urged government agencies to consolidate what at the time were several dozen different and unconnected networks into an ‘Interagency Network.’” Gore sponsored the 1991 High Performance Computing and Communications Act, which Kahn and Cerf say “became one of the major vehicles for the spread of the internet beyond the field of computer science.“</p>
+            <p>“As far back as the 1970s Congressman Gore promoted the idea of high speed telecommunications,” the pair wrote. “As a Senator in the 1980s Gore urged government agencies to consolidate what at the time were several dozen different and unconnected networks into an ‘Interagency Network.’” Gore sponsored the 1991 High Performance Computing and Communications Act, which Kahn and Cerf say “became one of the major vehicles for the spread of the internet beyond the field of computer science.“</p>
 
         </section>
 
@@ -126,9 +155,9 @@
 
             <p>In its early years, internet access was carried over physical cables. But more recently, wireless internet access has become increasingly common.</p>
 
-            <p>There are two basic types of wireless internet access: wifi and cellular. Wifi networks are relatively simple. Anyone can purchase wifi networking equipment in order to provide internet access in a home or business. Wifi networks use unlicensed spectrum: electromagnetic frequencies that are available for anyone to use without charge. To prevent neighbors’ networks from interfering with each other, there are strict limits on the power (and therefore the range) of wifi networks.</p>
+            <p>There are two basic types of wireless internet access: wifi and cellular. <b>Wifi</b> networks are relatively simple. Anyone can purchase wifi networking equipment in order to provide internet access in a home or business. Wifi networks use unlicensed spectrum: electromagnetic frequencies that are available for anyone to use without charge. To prevent neighbors’ networks from interfering with each other, there are strict limits on the power (and therefore the range) of wifi networks.</p>
 
-            <p>Cellular networks are more centralized. They work by breaking up the service territory into cells. In the densest areas, cells can be as small as a single city block; in rural areas a cell can be miles across. Each cell has a tower at its center providing services to devices there. When a device moves from one cell to another, the network automatically hands off the device from one tower to another, allowing the user to continue communicating without interruption.</p>
+            <p><b>Cellular</b> networks are more centralized. They work by breaking up the service territory into cells. In the densest areas, cells can be as small as a single city block; in rural areas a cell can be miles across. Each cell has a tower at its center providing services to devices there. When a device moves from one cell to another, the network automatically hands off the device from one tower to another, allowing the user to continue communicating without interruption.</p>
 
             <p>Cells are too large to use the unlicensed, low-power spectrum used by wifi networks. Instead, cellular networks use spectrum licensed for their exclusive use. Because this spectrum is scarce, it is usually awarded by auction. Wireless auctions have generated tens of billions of dollars in revenue for the US treasury since the first one was held in 1994.</p>
 
@@ -156,7 +185,7 @@
 
             <p>A packet is the basic unit of information transmitted over the internet. Splitting information up into small, digestible pieces allows the network’s capacity to be used more efficiently.</p>
 
-            <p>A packet has two parts. The header contains information that helps the packet get to its destination, including the length of the packet, its source and destination, and a checksum value that helps the recipient detect if a packet was damaged in transit. After the header comes the actual data. A packet can contain up to 64 kilobytes of data, which is roughly 20 pages of plain text.</p>
+            <p>A packet has two parts. The <b>header</b> contains information that helps the packet get to its destination, including the length of the packet, its source and destination, and a checksum value that helps the recipient detect if a packet was damaged in transit. After the header comes the actual <b>data</b>. A packet can contain up to 64 kilobytes of data, which is roughly 20 pages of plain text.</p>
 
             <p>If internet routers experience congestion or other technical problems, they are allowed to deal with it by simply discarding packets. It’s the sending computer’s responsibility to detect that a packet didn’t reach its destination and send another copy. This approach might seem counterintuitive, but it simplifies the internet’s core infrastructure, leading to higher performance at lower cost.</p>
 
@@ -234,8 +263,8 @@
 
         <hr>
         <div class="copyrights">
-            <p>&copy; 2024 All rights reserved &mdash; <b><i>Romantically</i></b></p>
-            <p>at <a href="../../index.html">romantically.dev</a></p>
+            <p>&copy; 2024 All rights reserved &mdash; <b><i>PorcelainCat</i></b></p>
+            <p>at <a href="../../index.html">porcelaincat.com</a></p>
         </div>
         <p class="blog-author">Created by <a href="https://github.com/miyukiconnelly" target="_blank" rel="noopener noreferrer">Miyuki Connelly</a>, a passionate developer based in the USA.</p>
     </div>

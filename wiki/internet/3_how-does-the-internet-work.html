@@ -3,27 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Romantically &ndash; How does the Internet Work? &ndash; stanford.edu</title>
+    <title>PorcelainCat &ndash; How does the Internet Work? (stanford.edu)</title>
     <link rel="stylesheet" href="../../style.css">
-    <link rel="icon" type="image/png" href="../../images/swan-icon.png">
+    <link rel="icon" type="image/png" href="../../images/cat-ceramicteapot.png">
 </head>
 <body>
     <div class="container">
 
-        <h1><a href="../../index.html">Romantically</a></h1>
+        <h1><a href="../../index.html">PorcelainCat</a></h1>
         <h2 class="subtitle">The Internet</h2>
 
         <div class="topic-nav">
             <h3 class="topic-nav-title">The internet</h3>
             <ul>
                 <li>
-                    <a href="1-how-does-the-internet-work.html">How does the Internet Work? &ndash; cs.fyi</a>
+                    <a href="1_how-does-the-internet-work.html">
+                        How does the Internet Work?
+                        <span class="source-site">(cs.fyi)</span>
+                    </a>
                 </li>
                 <li>
-                    <a href="2-the-internet-explained.html">The internet, explained &ndash; vox.com</a>
+                    <a href="2_the-internet-explained.html">
+                        The internet, explained
+                        <span class="source-site">(vox.com)</span>
+                    </a>
                 </li>
                 <li>
-                    <a href="3-how-does-the-internet-work.html" class="active">How does the Internet Work? &ndash; stanford.edu</a>
+                    <a href="3_how-does-the-internet-work.html" class="active">
+                        How does the Internet Work?
+                        <span class="source-site">(stanford.edu)</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="4_introduction-to-the-Internet.html">
+                        Introduction to the Internet
+                        <span class="source-site">(roadmap.sh)</span>
+                    </a>
+                    <ul>
+                        <li>
+                            <a href="4-1_dns-in-one-picture.html">
+                                DNS in One Picture
+                                <span class="source-site">(roadmap.sh)</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="4-2_a-cartoon-intro-to-dns-over-https.html">
+                                A cartoon intro to DNS over HTTPS
+                                <span class="source-site">(hacks.mozilla.org)</span>
+                            </a>
+                        </li>
+                    </ul>
                 </li>
             </ul>
         </div>
@@ -83,7 +112,7 @@
                     </tr>
                     <tr>
                         <td>
-                            If you're using Microsoft Windows or a flavor of Unix and have a connection to the Internet, there is a handy program to see if a computer on the Internet is alive. It's called <b>ping</b>, probably after the sound made by older submarine sonar systems.<sup>1</sup> If you are using Windows, start a command prompt window. If you're using a flavor of Unix, get to a command prompt. Type <code>ping www.yahoo.com</code>. The ping program will send a 'ping' (actually an ICMP (Internet Control Message Protocol) echo request message) to the named computer. The pinged computer will respond with a reply. The ping program will count the time expired until the reply comes back (if it does). Also, if you enter a domain name (i.e. www.yahoo.com) instead of an IP address, ping will resolve the domain name and display the computer's IP address. More on domain names and address resolution later. 
+                            If you're using Microsoft Windows or a flavor of Unix and have a connection to the Internet, there is a handy program to see if a computer on the Internet is alive. It's called <b>ping</b>, probably after the sound made by older submarine sonar systems.<sup>1</sup> If you are using Windows, start a command prompt window. If you're using a flavor of Unix, get to a command prompt. Type <code>ping www.yahoo.com</code> or <code>ping 180.222.114.12</code>. The ping program will send a 'ping' (actually an ICMP (Internet Control Message Protocol) echo request message) to the named computer. The pinged computer will respond with a reply. The ping program will count the time expired until the reply comes back (if it does). Also, if you enter a domain name (i.e. www.yahoo.com) instead of an IP address, ping will resolve the domain name and display the computer's IP address. More on domain names and address resolution later. 
                         </td>
                     </tr>
                 </tbody>
@@ -95,7 +124,7 @@
             
             <h2>Protocol Stacks and Packets</h2>
             
-            <p>So your computer is connected to the Internet and has a unique address. How does it 'talk' to other computers connected to the Internet? An example should serve here: Let's say your IP address is 1.2.3.4 and you want to send a message to the computer 5.6.7.8. The message you want to send is "Hello computer 5.6.7.8!". Obviously, the message must be transmitted over whatever kind of wire connects your computer to the Internet. Let's say you've dialed into your ISP from home and the message must be transmitted over the phone line. Therefore the message must be translated from alphabetic text into electronic signals, transmitted over the Internet, then translated back into alphabetic text. How is this accomplished? Through the use of a protocol stack. Every computer needs one to communicate on the Internet and it is usually built into the computer's operating system (i.e. Windows, Unix, etc.). The protocol stack used on the Internet is refered to as the TCP/IP protocol stack because of the two major communication protocols used. The TCP/IP stack looks like this:</p>
+            <p>So your computer is connected to the Internet and has a unique address. How does it 'talk' to other computers connected to the Internet? An example should serve here: Let's say your IP address is 1.2.3.4 and you want to send a message to the computer 5.6.7.8. The message you want to send is "Hello computer 5.6.7.8!". Obviously, the message must be transmitted over whatever kind of wire connects your computer to the Internet. Let's say you've dialed into your ISP from home and the message must be transmitted over the phone line. Therefore the message must be translated from alphabetic text into electronic signals, transmitted over the Internet, then translated back into alphabetic text. How is this accomplished? Through the use of a <b>protocol stack</b>. Every computer needs one to communicate on the Internet and it is usually built into the computer's operating system (i.e. Windows, Unix, etc.). The protocol stack used on the Internet is refered to as the TCP/IP protocol stack because of the two major communication protocols used. The TCP/IP stack looks like this:</p>
 
             <table cellpadding="8" border="2">
                 <tbody>
@@ -205,14 +234,14 @@
 
             <h2>Internet Infrastructure</h2>
 
-            <p>The Internet backbone is made up of many large networks which interconnect with each other. These large networks are known as Network Service Providers or NSPs. Some of the large NSPs are UUNet, CerfNet, IBM, BBN Planet, SprintNet, PSINet, as well as others. These networks peer with each other to exchange packet traffic. Each NSP is required to connect to three Network Access Points or NAPs. At the NAPs, packet traffic may jump from one NSP's backbone to another NSP's backbone. NSPs also interconnect at Metropolitan Area Exchanges or MAEs. MAEs serve the same purpose as the NAPs but are privately owned. NAPs were the original Internet interconnect points. Both NAPs and MAEs are referred to as Internet Exchange Points or IXs. NSPs also sell bandwidth to smaller networks, such as ISPs and smaller bandwidth providers. Below is a picture showing this hierarchical infrastructure.</p>
+            <p>The Internet backbone is made up of many large networks which interconnect with each other. These large networks are known as <b>Network Service Providers</b> or <b>NSPs</b>. Some of the large NSPs are UUNet, CerfNet, IBM, BBN Planet, SprintNet, PSINet, as well as others. These networks <i>peer</i> with each other to exchange packet traffic. Each NSP is required to connect to three <b>Network Access Points</b> or <b>NAPs</b>. At the NAPs, packet traffic may jump from one NSP's backbone to another NSP's backbone. NSPs also interconnect at <b>Metropolitan Area Exchanges</b> or <b>MAE</b>s. MAEs serve the same purpose as the NAPs but are privately owned. NAPs were the original Internet interconnect points. Both NAPs and MAEs are referred to as <b>Internet Exchange Points</b> or <b>IXs</b>. NSPs also sell bandwidth to smaller networks, such as ISPs and smaller bandwidth providers. Below is a picture showing this hierarchical infrastructure.</p>
 
             <div class="diagram-box">
                 <img src="https://web.stanford.edu/class/msande91si/www-spr04/readings/week1/InternetWhitepaper_files/ruswp_diag4.gif" alt="Networking Infrastructure">
                 <span class="diagram-desc">Diagram 4</span>
             </div>
 
-            <p>This is not a true representation of an actual piece of the Internet. Diagram 4 is only meant to demonstrate how the NSPs could interconnect with each other and smaller ISPs. None of the physical network components are shown in Diagram 4 as they are in Diagram 3. This is because a single NSP's backbone infrastructure is a complex drawing by itself. Most NSPs publish maps of their network infrastructure on their web sites and can be found easily. To draw an actual map of the Internet would be nearly impossible due to it's size, complexity, and ever changing structur</p>
+            <p>This is not a true representation of an actual piece of the Internet. Diagram 4 is only meant to demonstrate how the NSPs could interconnect with each other and smaller ISPs. None of the physical network components are shown in Diagram 4 as they are in Diagram 3. This is because a single NSP's backbone infrastructure is a complex drawing by itself. Most NSPs publish maps of their network infrastructure on their web sites and can be found easily. To draw an actual map of the Internet would be nearly impossible due to it's size, complexity, and ever changing structure.</p>
 
         </section>
 
@@ -266,7 +295,7 @@
 
         <section>
 
-            <h2>Internet Protocols Revisited</h2>
+            <h2 class="topic-title">Internet Protocols Revisited</h2>
 
             <p>As hinted to earlier in the section about protocol stacks, one may surmise that there are many protocols that are used on the Internet. This is true; there are many communication protocols required for the Internet to function. These include the TCP and IP protocols, routing protocols, medium access control protocols, application level protocols, etc. The following sections describe some of the more important and commonly used protocols on the Internet. Higher level protocols are discussed first, followed by lower level protocols.</p>
 
@@ -276,9 +305,9 @@
 
             <h2>Application Protocols: HTTP and the World Wide Web</h2>
 
-            <p>One of the most commonly used services on the Internet is the World Wide Web (WWW). The application protocol that makes the web work is <b>Hypertext Transfer Protocol</b> or <b>HTTP</b>. Do not confuse this with the Hypertext Markup Language (HTML). HTML is the language used to write web pages. HTTP is the protocol that web browsers and web servers use to communicate with each other over the Internet. It is an application level protocol because it sits on top of the TCP layer in the protocol stack and is used by specific applications to talk to one another. In this case the applications are web browsers and web servers.</p>
+            <p>One of the most commonly used services on the Internet is the World Wide Web (WWW). The application protocol that makes the web work is <b>Hypertext Transfer Protocol</b> or <b>HTTP</b>. Do not confuse this with the Hypertext Markup Language (HTML). HTML is the language used to write web pages. <u>HTTP is the protocol that web browsers and web servers use to communicate with each other over the Internet.</u> It is an application level protocol because it sits on top of the TCP layer in the protocol stack and is used by specific applications to talk to one another. In this case the applications are <i>web browsers</i> and <i>web servers</i>.</p>
 
-            <p>HTTP is a connectionless text based protocol. Clients (web browsers) send requests to web servers for web elements such as web pages and images. After the request is serviced by a server, the connection between client and server across the Internet is disconnected. A new connection must be made for each request. Most protocols are connection oriented. This means that the two computers communicating with each other keep the connection open over the Internet. HTTP does not however. Before an HTTP request can be made by a client, a new connection must be made to the server.</p>
+            <p><u>HTTP is a connectionless text based protocol.</u> Clients (web browsers) send requests to web servers for web elements such as web pages and images. After the request is serviced by a server, the connection between client and server across the Internet is disconnected. A new connection must be made for each request. <i>Most protocols are connection oriented. This means that the two computers communicating with each other keep the connection open over the Internet.</i> HTTP does not however. Before an HTTP request can be made by a client, a new connection must be made to the server.</p>
 
             <p>When you type a URL into a web browser, this is what happens:</p>
 
@@ -406,7 +435,7 @@
                     <tr>
                         <td>Listed below are the port numbers for some of the more commonly used Internet services. 
                             <center>
-                                <table border="0">
+                                <table border="0" style="width: 55%; font-size: 98%;">
                                     <tbody>
                                         <tr>
                                             <td width="100">FTP</td>
@@ -470,8 +499,8 @@
 
         <hr>
         <div class="copyrights">
-            <p>&copy; 2024 All rights reserved &mdash; <b><i>Romantically</i></b></p>
-            <p>at <a href="../../index.html">romantically.dev</a></p>
+            <p>&copy; 2024 All rights reserved &mdash; <b><i>PorcelainCat</i></b></p>
+            <p>at <a href="../../index.html">porcelaincat.com</a></p>
         </div>
         <p class="blog-author">Created by <a href="https://github.com/miyukiconnelly" target="_blank" rel="noopener noreferrer">Miyuki Connelly</a>, a passionate developer based in the USA.</p>
     </div>

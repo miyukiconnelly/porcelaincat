@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PorcelainCat &ndash; How does the internet work? (roadmap.sh)</title>
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="icon" type="image/png" href="../../images/cat-ceramicteapot.png">
+</head>
+<body>
+    <div class="container">
+
+        <h1><a href="../../index.html">PorcelainCat</a></h1>
+        <h2 class="subtitle">The Internet</h2>
+
+        <div class="topic-nav">
+            <h3 class="topic-nav-title">The internet</h3>
+            <ul>
+                <li>
+                    <a href="1_how-does-the-internet-work.html">
+                        How does the Internet Work?
+                        <span class="source-site">(cs.fyi)</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="2_the-internet-explained.html">
+                        The internet, explained
+                        <span class="source-site">(vox.com)</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="3_how-does-the-internet-work.html">
+                        How does the Internet Work?
+                        <span class="source-site">(stanford.edu)</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="4_introduction-to-the-Internet.html" class="active">
+                        Introduction to the Internet
+                        <span class="source-site">(roadmap.sh)</span>
+                    </a>
+                    <ul>
+                        <li>
+                            <a href="4-1_dns-in-one-picture.html">
+                                DNS in One Picture
+                                <span class="source-site">(roadmap.sh)</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="4-2_a-cartoon-intro-to-dns-over-https.html">
+                                A cartoon intro to DNS over HTTPS
+                                <span class="source-site">(hacks.mozilla.org)</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <section class="headstart">
+
+            <h2 class="topic-title">How does the internet work?</h2>
+
+            <p>Since the explosive growth of web-based applications, every developer stands to benefit from understanding how the Internet works. Through this article and its accompanying introductory series of short videos about the Internet from <a href="https://code.org/" target="_blank" rel="noopener noreferrer">code.org</a>, you will learn the basics of the Internet and how it works. After going through this article, you will be able to answer the following questions:</p>
+
+            <ul>
+                <li>
+                    <a href="#1-internet">What is the Internet?</a>
+                </li>
+                <li>
+                    <a href="#2-info-movement">How does the information move on the internet?</a>
+                </li>
+                <li>
+                    <a href="#3-protocols">How do the networks talk to each other and the protocols involved?</a>
+                </li>
+                <li>
+                    <a href="#4-packets-routers-and-reliability">What’s the relationship between packets, routers, and reliability?</a>
+                </li>
+                <li>
+                    <a href="#5-http-and-html">HTTP and the HTML – How are you viewing this webpage in your browser?</a>
+                </li>
+                <li>
+                    <a href="#6-encryption-and-public-keys">How is the information transfer on the internet made secure?</a>
+                </li>
+                <li>
+                    <a href="#7-cybersecurity-and-crime">What is cybersecurity and what are some common internet crimes?</a>
+                </li>
+            </ul>
+
+        </section>
+
+        <section id="1-internet">
+
+            <h2>What is the Internet?</h2>
+
+            <h3>How does the Internet Work?</h3>
+
+            <p>The Internet is a global network of computers connected to each other which communicate through a standardized set of protocols.</p>
+
+            <p>In the video below, Vint Cerf, one of the “fathers of the internet,” explains the history of how the Internet works and how no one person or organization is really in charge of it.</p>
+
+            <iframe height="330" src="https://www.youtube.com/embed/Dxcc6ycZ73M" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
+
+
+        </section>
+
+        <section id="2-info-movement">
+
+            <h2>Wires, Cables, and Wi-Fi</h2>
+
+            <h3>How does the information move on the internet?</h3>
+
+            <p>Information on the Internet moves from one computer to another in the form of bits over various mediums, including Ethernet cables, fiber optic cables, and wireless signals (i.e., radio waves).</p>
+
+            <p>In the video linked below, you will learn about the different mediums for data transfer on the Internet and the pros and cons for each.</p>
+
+            <iframe height="330" src="https://www.youtube.com/embed/ZhEf7e4kopM?si=FFhhF3ASBEhvSUp_" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+        </section>
+
+        <section id="3-protocols">
+
+            <h2>IP Addresses and DNS</h2>
+
+            <h3>How do the networks talk to each other and the protocols involved?</h3>
+
+            <p>Now that you know about the physical medium for the data transfer over the internet, it’s time to learn about the protocols involved. How does the information traverse from one computer to another in this massive global network of computers?</p>
+
+            <p>In the video below, you will get a brief introduction to IP, DNS, and how these protocols make the Internet work.</p>
+
+            <iframe height="330" src="https://www.youtube.com/embed/5o8CwafCxnU?si=5weuVqjUR5ZTygEt" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+        </section>
+
+        <section id="4-packets-routers-and-reliability">
+
+            <h2>Packets, Routing, and Reliability</h2>
+
+            <h3>What’s the relationship between packets, routers, and reliability?</h3>
+
+            <p>Information transfer on the Internet from one computer to another does not need to follow a fixed path; in fact, it may change paths during the transfer. This information transfer is done in the form of packets and these packets may follow different routes depending on certain factors.</p>
+
+            <p>In this video, you will learn about how the packets of information are routed from one computer to another to reach the destination.</p>
+
+            <iframe height="330" src="https://www.youtube.com/embed/AYdF7b3nMto?si=OyJB4-MEOXZRcY3s" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            
+        </section>
+
+        <section id="5-http-and-html">
+
+            <h2>HTTP and HTML</h2>
+
+            <h3>HTTP and the HTML – How are you viewing this webpage in your browser?</h3>
+
+            <p>HTTP is the standard protocol by which webpages are transferred over the Internet. The video below is a brief introduction to HTTP and how web browsers load websites for you.</p>
+
+            <iframe height="330" src="https://www.youtube.com/embed/kBXQZMmiA4s?si=0z8sY3KcqTaO7ZFi" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            
+        </section>
+
+        <section id="6-encryption-and-public-keys">
+
+            <h2>Encryption and Public Keys</h2>
+
+            <h3>How is the information transfer on the internet made secure?</h3>
+
+            <p>Cryptography is what keeps our communication secure on the Internet. In this short video, you will learn the basics of cryptography, SSL/TLS, and how they help make the communication on the Internet secure.</p>
+
+            <iframe height="330" src="https://www.youtube.com/embed/ZghMPWGXexs?si=fiPRxl91oNtW6-fn" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            
+        </section>
+
+        <section id="7-cybersecurity-and-crime">
+
+            <h2>Cybersecurity and Crime</h2>
+
+            <h3>What is cybersecurity and what are some common internet crimes?</h3>
+
+            <p>Cybersecurity refers to the protective measures against criminal activity accomplished through using a network, technological devices, and the internet.In this video, you will learn about the basics of cybersecurity and common cybercrimes.</p>
+
+            <iframe height="330" src="https://www.youtube.com/embed/AuYNXgO_f3Y?si=rCsWg0MSB0qs3BGg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            
+        </section>
+
+        <section>
+
+            <p>And that wraps it up for this article. To learn more about the Internet, <a href="https://twitter.com/kamrify" target="_blank" rel="noopener noreferrer">Kamran Ahmed</a> has a nice little guide on <a href="https://roadmap.sh/guides/dns-in-one-picture" target="_blank" rel="noopener noreferrer">DNS: How a website is found on the Internet</a>. Also, go through the episodes of <a href="https://howdns.works/" target="_blank" rel="noopener noreferrer">howdns.works</a> and read this <a href="https://hacks.mozilla.org/2018/05/a-cartoon-intro-to-dns-over-https/" target="_blank" rel="noopener noreferrer">cartoon intro to DNS over HTTPS</a>.</p>
+
+        </section>
+
+        <section>
+
+            <h2 class="topic-title">Additional videos</h2>
+
+            <h3>How Computers Work: Binary & Data</h3>
+            <iframe height="330" src="https://www.youtube.com/embed/USCBCmwMCDA?si=ffIz7bY0-j1m1QcJ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+            <h3>How Computers Work: Circuits & Logic</h3>
+            <iframe height="330" src="https://www.youtube.com/embed/ZoqMiFKspAA?si=Rk3Zp2mGrnuguCLZ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+            <h3>How Computers Work: CPU, Memory, Input & Output</h3>
+            <iframe height="330" src="https://www.youtube.com/embed/DKGZlaPlVLY?si=nPkmcT-s1ZxgFuoF" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+            <h3>How Chatbots and Large Language Models Work</h3>
+            <iframe height="330" src="https://www.youtube.com/embed/X-AWdfSFCHQ?si=hSDd6su1MGkLCi5R" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+        </section>
+        
+        
+        <p class="info-source">Source: <a href="https:///guides/what-is-internet" target="_blank" rel="noopener noreferrer">https:///guides/what-is-internet</a></p>
+
+        <hr>
+        <div class="copyrights">
+            <p>&copy; 2024 All rights reserved &mdash; <b><i>PorcelainCat</i></b></p>
+            <p>at <a href="../../index.html">porcelaincat.com</a></p>
+        </div>
+        <p class="blog-author">Created by <a href="https://github.com/miyukiconnelly" target="_blank" rel="noopener noreferrer">Miyuki Connelly</a>, a passionate developer based in the USA.</p>
+    </div>
+</body>
+</html>

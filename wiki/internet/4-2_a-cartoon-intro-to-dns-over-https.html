@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PorcelainCat &ndash; </title>
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="icon" type="image/png" href="../../images/cat-ceramicteapot.png">
+</head>
+<body>
+    <div class="container dns-cartoon">
+
+        <h1><a href="../../index.html">PorcelainCat</a></h1>
+        <h2 class="subtitle">The Internet</h2>
+
+        <div class="topic-nav">
+            <h3 class="topic-nav-title">The internet</h3>
+            <ul>
+                <li>
+                    <a href="1_how-does-the-internet-work.html">
+                        How does the Internet Work?
+                        <span class="source-site">(cs.fyi)</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="2_the-internet-explained.html">
+                        The internet, explained
+                        <span class="source-site">(vox.com)</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="3_how-does-the-internet-work.html">
+                        How does the Internet Work?
+                        <span class="source-site">(stanford.edu)</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="4_introduction-to-the-Internet.html">
+                        Introduction to the Internet
+                        <span class="source-site">(roadmap.sh)</span>
+                    </a>
+                    <ul>
+                        <li>
+                            <a href="4-1_dns-in-one-picture.html">
+                                DNS in One Picture
+                                <span class="source-site">(roadmap.sh)</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="4-2_a-cartoon-intro-to-dns-over-https.html" class="active">
+                                A cartoon intro to DNS over HTTPS
+                                <span class="source-site">(hacks.mozilla.org)</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <section class="headstart">
+
+            <h2 class="topic-title">A cartoon intro to DNS over HTTPS</h2>
+<!-- 
+            <p>Threats to users’ privacy and security are growing. At Mozilla, we closely track these threats. We believe we have a duty to do everything we can to protect Firefox users and their data.</p>
+
+            <p>We’re taking on the companies and organizations that want to secretly collect and sell user data. This is why we added <a href="https://blog.mozilla.org/en/products/firefox/tracking-protection-always-on/" target="_blank" rel="noopener noreferrer">tracking protection</a> and created the <a href="https://blog.mozilla.org/en/products/firefox/facebook-container-extension/" target="_blank" rel="noopener noreferrer">Facebook container extension</a>. And you’ll be seeing us do more things to protect our users over the coming months.</p>
+
+            <img src="https://hacks.mozilla.org/files/2018/05/00_01-768x267.png" alt="tracking protection">
+
+            <p>Two more protections we’re adding to that list are:</p>
+            <ul>
+                <li>DNS over HTTPS, a new IETF standards effort that we’ve championed</li>
+                <li>Trusted Recursive Resolver, a new secure way to resolve DNS that we’ve partnered with <a href="https://www.cloudflare.com/" target="_blank" rel="noopener noreferrer">Cloudflare</a> to provide</li>
+            </ul>
+
+            <p>With these two initiatives, we’re closing data leaks that have been part of the domain name system since it was created 35 years ago. And we’d like your help in testing them. So let’s look at how DNS over HTTPS and Trusted Recursive Resolver protect our users.</p>
+
+            <p>But first, let’s look at how web pages move around the Internet.</p>
+
+            <p><em class="markup--em markup--p-em">If you already know how DNS and HTTPS work, you can skip to <a href="#trr-and-doh">how DNS over HTTPS helps</a>.</em></p> -->
+
+        </section>
+
+        <article class="post" role="article">
+            <p>Threats to users’ privacy and security are growing. At Mozilla, we closely track these threats. We believe we have a duty to do everything we can to protect Firefox users and their data.</p>
+        <p>We’re taking on the companies and organizations that want to secretly collect and sell user data. This is why we added <a href="https://blog.mozilla.org/firefox/tracking-protection-always-on/" target="_blank">tracking protection</a> and created the <a href="https://blog.mozilla.org/firefox/facebook-container-extension/" data-href="https://blog.mozilla.org/firefox/facebook-container-extension/" target="_blank">Facebook container extension</a>. And you’ll be seeing us do more things to protect our users over the coming months.</p>
+        <p><a href="https://hacks.mozilla.org/files/2018/05/00_01.png"><img decoding="async" fetchpriority="high" class="alignnone size-large wp-image-32291" src="https://hacks.mozilla.org/files/2018/05/00_01-500x174.png" alt="Icons for security projects that we’ve introduced" width="500" height="174" srcset="https://hacks.mozilla.org/files/2018/05/00_01-500x174.png 500w, https://hacks.mozilla.org/files/2018/05/00_01-250x87.png 250w, https://hacks.mozilla.org/files/2018/05/00_01-768x267.png 768w" sizes="(max-width: 500px) 100vw, 500px"></a></p>
+        <p>Two more protections we’re adding to that list are:</p>
+        <ul>
+        <li>DNS over HTTPS, a new IETF standards effort that we’ve championed</li>
+        <li>Trusted Recursive Resolver, a new secure way to resolve DNS that we’ve partnered with <a href="https://www.cloudflare.com/" target="_blank">Cloudflare</a> to provide</li>
+        </ul>
+        <p>With these two initiatives, we’re closing data leaks that have been part of the domain name system since it was created 35 years ago. And we’d like your help in testing them. So let’s look at how DNS over HTTPS and Trusted Recursive Resolver protect our users.</p>
+        <p>But first, let’s look at how web pages move around the Internet.</p>
+        <p><em class="markup--em markup--p-em">If you already know how DNS and HTTPS work, you can skip to <a href="#trr-and-doh">how DNS over HTTPS helps</a>.</em></p>
+        <h3>A brief HTTP crash&nbsp;course</h3>
+        <p>When people explain how a browser downloads a web page, they usually explain it this way:</p>
+        <ol class="postList">
+        <li id="6004" class="graf graf--li graf-after--p">Your browser makes a GET request to a server.</li>
+        <li id="b8c9" class="graf graf--li graf-after--li">The server sends a response, which is a file containing HTML.</li>
+        </ol>
+        <p><a href="https://hacks.mozilla.org/files/2018/05/01_01.png"><img decoding="async" class="alignnone size-large wp-image-32292" src="https://hacks.mozilla.org/files/2018/05/01_01-500x260.png" alt="browser GET request + response" width="500" height="260" srcset="https://hacks.mozilla.org/files/2018/05/01_01-500x260.png 500w, https://hacks.mozilla.org/files/2018/05/01_01-250x130.png 250w, https://hacks.mozilla.org/files/2018/05/01_01-768x399.png 768w" sizes="(max-width: 500px) 100vw, 500px"></a></p>
+        <p>This system is called HTTP.</p>
+        <p>But this diagram is a little oversimplified. Your browser doesn’t talk directly to the server. That’s because they probably aren’t close to each other.</p>
+        <p>Instead, the server could be thousands of miles away. And there’s likely no direct link between your computer and the server.</p>
+        <p><b><a href="https://hacks.mozilla.org/files/2018/05/01_02.png"><img decoding="async" class="alignnone size-large wp-image-32293" src="https://hacks.mozilla.org/files/2018/05/01_02-500x282.png" alt="image of client and server on opposite ends of the network" width="500" height="282" srcset="https://hacks.mozilla.org/files/2018/05/01_02-500x282.png 500w, https://hacks.mozilla.org/files/2018/05/01_02-220x125.png 220w, https://hacks.mozilla.org/files/2018/05/01_02-250x141.png 250w, https://hacks.mozilla.org/files/2018/05/01_02-768x433.png 768w" sizes="(max-width: 500px) 100vw, 500px"></a></b></p>
+        <p>So this request needs to get from the browser to that server, and it will go through multiple hands before it gets there. And the same is true for the response coming back from the server.</p>
+        <p>I think of this like kids passing notes to each other in class. On the outside, the note will say who it’s supposed to go to. The kid who wrote the note will pass it to their neighbor. Then that next kid passes it to one of their neighbors — probably not the eventual recipient, but someone who’s in that direction.</p>
+        <p><a href="https://hacks.mozilla.org/files/2018/05/01_03.png"><img decoding="async" loading="lazy" class="alignnone size-large wp-image-32294" src="https://hacks.mozilla.org/files/2018/05/01_03-500x199.png" alt="kids passing notes" width="500" height="199" srcset="https://hacks.mozilla.org/files/2018/05/01_03-500x199.png 500w, https://hacks.mozilla.org/files/2018/05/01_03-250x99.png 250w, https://hacks.mozilla.org/files/2018/05/01_03-768x305.png 768w" sizes="(max-width: 500px) 100vw, 500px"></a></p>
+        <p>The problem with this is that anyone along the path can open up the note and read it. And there’s no way to know in advance which path the note is going to take, so there’s no telling what kind of people will have access to it.</p>
+        <p>It could end up in the hands of people who do harmful things…</p>
+        <p>Like sharing the contents of the note with everyone.</p>
+        <p><a href="https://hacks.mozilla.org/files/2018/05/01_04.png"><img decoding="async" loading="lazy" class="alignnone size-large wp-image-32295" src="https://hacks.mozilla.org/files/2018/05/01_04-500x256.png" alt="kid saying “Ooo, hey everybody… Danny loves Sandy!”" width="500" height="256" srcset="https://hacks.mozilla.org/files/2018/05/01_04-500x256.png 500w, https://hacks.mozilla.org/files/2018/05/01_04-250x128.png 250w, https://hacks.mozilla.org/files/2018/05/01_04-768x393.png 768w" sizes="(max-width: 500px) 100vw, 500px"></a></p>
+        <p>Or changing the response.</p>
+        <p><a href="https://hacks.mozilla.org/files/2018/05/01_05.png"><img decoding="async" loading="lazy" class="alignnone size-large wp-image-32296" src="https://hacks.mozilla.org/files/2018/05/01_05-500x214.png" alt="kid saying “Do you like me? Y/N… Heh, I’m going to prank him and put no here”" width="500" height="214" srcset="https://hacks.mozilla.org/files/2018/05/01_05-500x214.png 500w, https://hacks.mozilla.org/files/2018/05/01_05-250x107.png 250w, https://hacks.mozilla.org/files/2018/05/01_05-768x328.png 768w" sizes="(max-width: 500px) 100vw, 500px"></a></p>
+        <p>To fix these issues, a new, secure version of HTTP was created. This is called HTTPS. With HTTPS, it’s kind of like each message has a lock on it.</p>
+        <p><a href="https://hacks.mozilla.org/files/2018/05/01_06.png"><img decoding="async" loading="lazy" class="alignnone size-large wp-image-32315" src="https://hacks.mozilla.org/files/2018/05/01_06-500x160.png" alt="open envelope next to locked envelope" width="500" height="160" srcset="https://hacks.mozilla.org/files/2018/05/01_06-500x160.png 500w, https://hacks.mozilla.org/files/2018/05/01_06-250x80.png 250w, https://hacks.mozilla.org/files/2018/05/01_06-768x246.png 768w" sizes="(max-width: 500px) 100vw, 500px"></a></p>
+        <p>Both the browser and the server know the combination to that lock, but no one in between does.</p>
+        <p>With this, even if the messages go through multiple routers in between, only you and the web site will actually be able to read the contents.</p>
+        <p>This solves a lot of the security issues. But there are still some messages going between your browser and the server that aren’t encrypted. This means people along the way can still pry into what you’re doing.</p>
+        <p>One place where data is still exposed is in setting up the connection to the server. When you send your initial message to the server, you send the server name as well (in a field called “Server Name Indication”). This lets server operators run multiple sites on the same machine while still knowing who you are trying to talk to. This initial request is part of setting up encryption, but the initial request itself isn’t encrypted.</p>
+        <p>The other place where data is exposed is in DNS. But what is DNS?</p>
+        <h3>DNS: the Domain Name&nbsp;System</h3>
+        <p>In the passing notes metaphor above, I said that the name of the recipient had to be on the outside of the note. This is true for HTTP requests too… they need to say who they are going to.</p>
+        <p>But you can’t use a name for them. None of the routers would know who you were talking about. Instead, you have to use an IP address. That’s how the routers in between know which server you want to send your request to.</p>
+        <p><a href="https://hacks.mozilla.org/files/2018/05/02_01.png"><img decoding="async" loading="lazy" class="alignnone size-large wp-image-32299" src="https://hacks.mozilla.org/files/2018/05/02_01-500x295.png" alt="network with IP addresses" width="500" height="295" srcset="https://hacks.mozilla.org/files/2018/05/02_01-500x295.png 500w, https://hacks.mozilla.org/files/2018/05/02_01-250x148.png 250w, https://hacks.mozilla.org/files/2018/05/02_01-768x454.png 768w" sizes="(max-width: 500px) 100vw, 500px"></a></p>
+        <p>This causes a problem. You don’t want users to have to remember your site’s IP address. Instead, you want to be able to give your site a catchy name… something that users can remember.</p>
+        <p>This is why we have the domain name system (DNS). Your browser uses DNS to convert the site name to an IP address. This process — converting the domain name to an IP address — is called domain name resolution.</p>
+        <p><a href="https://hacks.mozilla.org/files/2018/05/02_02.png"><img decoding="async" loading="lazy" class="alignnone size-large wp-image-32300" src="https://hacks.mozilla.org/files/2018/05/02_02-500x37.png" alt="domain and address equivalence" width="500" height="37" srcset="https://hacks.mozilla.org/files/2018/05/02_02-500x37.png 500w, https://hacks.mozilla.org/files/2018/05/02_02-250x18.png 250w, https://hacks.mozilla.org/files/2018/05/02_02-768x57.png 768w" sizes="(max-width: 500px) 100vw, 500px"></a></p>
+        <p>How does the browser know how to do this?</p>
+        <p>One option would be to have a big list, like a phone book in the browser. But as new web sites came online, or as sites moved to new servers, it would be hard to keep that list up-to-date.</p>
+        <p>So instead of having one list which keeps track of all of the domain names, there are lots of smaller lists that are linked to each other. This allows them to be managed independently.</p>
+        <p><a href="https://hacks.mozilla.org/files/2018/05/02_03.png"><img decoding="async" loading="lazy" class="alignnone size-large wp-image-32301" src="https://hacks.mozilla.org/files/2018/05/02_03-500x222.png" alt="one list, vs lots of smaller lists" width="500" height="222" srcset="https://hacks.mozilla.org/files/2018/05/02_03-500x222.png 500w, https://hacks.mozilla.org/files/2018/05/02_03-250x111.png 250w, https://hacks.mozilla.org/files/2018/05/02_03-768x341.png 768w" sizes="(max-width: 500px) 100vw, 500px"></a></p>
+        <p>In order to get the IP address that corresponds to a domain name, you have to find the list that contains that domain name. Doing this is kind of like a treasure hunt.</p>
+        <p>What would this treasure hunt look like for a site like the English version of wikipedia, <code>en.wikipedia.org</code>?</p>
+        <p>We can split this domain into parts.</p>
+        <p><a href="https://hacks.mozilla.org/files/2018/05/02_04.png"><img decoding="async" loading="lazy" class="alignnone size-large wp-image-32302" src="https://hacks.mozilla.org/files/2018/05/02_04-500x127.png" alt="domain split into top level, second level, and subdomain." width="500" height="127" srcset="https://hacks.mozilla.org/files/2018/05/02_04-500x127.png 500w, https://hacks.mozilla.org/files/2018/05/02_04-250x64.png 250w, https://hacks.mozilla.org/files/2018/05/02_04-768x195.png 768w, https://hacks.mozilla.org/files/2018/05/02_04.png 1955w" sizes="(max-width: 500px) 100vw, 500px"></a></p>
+        <p>With these parts, we can hunt for the list that contains the IP address for the site. We need some help in our quest, though. The tool that will go on this hunt for us and find the IP address is called a resolver.</p>
+        <p>First, the resolver talks to a server called the Root DNS. It knows of a few different Root DNS servers, so it sends the request to one of them. The resolver asks the Root DNS where it can find more info about addresses in the&nbsp;<code>.org</code> top-level domain.</p>
+        <p>The Root DNS will give the resolver an address for a server that knows about&nbsp;<code>.org</code> addresses.</p>
+        <p><a href="https://hacks.mozilla.org/files/2018/05/02_05.png"><img decoding="async" loading="lazy" class="alignnone size-large wp-image-32303" src="https://hacks.mozilla.org/files/2018/05/02_05-500x438.png" alt="resolver talking to Root DNS" width="500" height="438" srcset="https://hacks.mozilla.org/files/2018/05/02_05-500x438.png 500w, https://hacks.mozilla.org/files/2018/05/02_05-250x219.png 250w, https://hacks.mozilla.org/files/2018/05/02_05-768x673.png 768w" sizes="(max-width: 500px) 100vw, 500px"></a></p>
+        <p>This next server is called a top-level domain (TLD) name server. The TLD server knows about all of the second-level domains that end with&nbsp;<code>.org</code>.</p>
+        <p>It doesn’t know anything about the subdomains under <code>wikipedia.org</code>, though, so it doesn’t know the IP address for <code>en.wikipedia.org</code>.</p>
+        <p>The TLD name server will tell the resolver to ask Wikipedia’s name server.</p>
+        <p><a href="https://hacks.mozilla.org/files/2018/05/02_06.png"><img decoding="async" loading="lazy" class="alignnone size-large wp-image-32304" src="https://hacks.mozilla.org/files/2018/05/02_06-500x373.png" alt="resolver talking to TLD DNS" width="500" height="373" srcset="https://hacks.mozilla.org/files/2018/05/02_06-500x373.png 500w, https://hacks.mozilla.org/files/2018/05/02_06-250x187.png 250w, https://hacks.mozilla.org/files/2018/05/02_06-768x573.png 768w" sizes="(max-width: 500px) 100vw, 500px"></a></p>
+        <p>The resolver is almost done now. Wikipedia’s name server is what’s called the authoritative server. It knows about all of the domains under <code>wikipedia.org</code>. So this server knows about <code>en.wikipedia.org</code>, and other subdomains like the German version, <code>de.wikipedia.org</code>. The authoritative server tells the resolver which IP address has the HTML files for the site.</p>
+        <p><a href="https://hacks.mozilla.org/files/2018/05/02_07.png"><img decoding="async" loading="lazy" class="alignnone size-large wp-image-32305" src="https://hacks.mozilla.org/files/2018/05/02_07-500x371.png" alt="resolver talking to authoritative DNS" width="500" height="371" srcset="https://hacks.mozilla.org/files/2018/05/02_07-500x371.png 500w, https://hacks.mozilla.org/files/2018/05/02_07-250x186.png 250w, https://hacks.mozilla.org/files/2018/05/02_07-768x571.png 768w" sizes="(max-width: 500px) 100vw, 500px"></a></p>
+        <p>The resolver will return the IP address for <code>en.wikipedia.org</code> to the operating system.</p>
+        <p>This process is called recursive resolution, because you have to go back and forth asking different servers what’s basically the same question.</p>
+        <p>I said we need a resolver to help us in our quest. But how does the browser find this resolver? In general, it asks the computer’s operating system to set it up with a resolver that can help.</p>
+        <p><a href="https://hacks.mozilla.org/files/2018/05/02_08.png"><img decoding="async" loading="lazy" class="alignnone size-large wp-image-32306" src="https://hacks.mozilla.org/files/2018/05/02_08-500x260.png" alt="browser asking OS for resolver" width="500" height="260" srcset="https://hacks.mozilla.org/files/2018/05/02_08-500x260.png 500w, https://hacks.mozilla.org/files/2018/05/02_08-250x130.png 250w, https://hacks.mozilla.org/files/2018/05/02_08-768x399.png 768w" sizes="(max-width: 500px) 100vw, 500px"></a></p>
+        <p>How does the operating system know which resolver to use? There are two possible ways.</p>
+        <p>You <em>can</em> configure your computer to use a resolver you trust. But very few people do this.</p>
+        <p>Instead, most people just use the default. And by default, the OS will just use whatever resolver the network told it to. When the computer connects to the network and gets its IP address, the network recommends a resolver to use.</p>
+        <p><a href="https://hacks.mozilla.org/files/2018/05/02_09.png"><img decoding="async" loading="lazy" class="alignnone size-large wp-image-32307" src="https://hacks.mozilla.org/files/2018/05/02_09-500x260.png" alt="operating system getting a recommendation from the network" width="500" height="260" srcset="https://hacks.mozilla.org/files/2018/05/02_09-500x260.png 500w, https://hacks.mozilla.org/files/2018/05/02_09-250x130.png 250w, https://hacks.mozilla.org/files/2018/05/02_09-768x399.png 768w" sizes="(max-width: 500px) 100vw, 500px"></a></p>
+        <p>This means that the resolver that you’re using can change multiple times per day. If you head to the coffee shop for an afternoon work session, you’re probably using a different resolver than you were in the morning. And this is true even if you have configured your own resolver, because there’s no security in the DNS protocol.</p>
+        <h3>How can DNS be exploited?</h3>
+        <p>So how can this system make users vulnerable?</p>
+        <p>Usually a resolver will tell each DNS server what domain you are looking for. This request sometimes includes your full IP address. Or if not your full IP address, increasingly often the request includes most of your IP address, which can easily be combined with other information to figure out your identity.</p>
+        <p><a href="https://hacks.mozilla.org/files/2018/05/03_01.png"><img decoding="async" loading="lazy" class="alignnone size-large wp-image-32308" src="https://hacks.mozilla.org/files/2018/05/03_01-500x267.png" alt="DNS request" width="500" height="267" srcset="https://hacks.mozilla.org/files/2018/05/03_01-500x267.png 500w, https://hacks.mozilla.org/files/2018/05/03_01-250x133.png 250w, https://hacks.mozilla.org/files/2018/05/03_01-768x410.png 768w" sizes="(max-width: 500px) 100vw, 500px"></a></p>
+        <p>This means that every server that you ask to help with domain name resolution sees what site you’re looking for. But more than that, it also means that anyone on the path to those servers sees your requests, too.</p>
+        <p>There are a few ways that this system puts users’ data at risk. The two major risks are tracking and spoofing.</p>
+        <h4>Tracking</h4>
+        <p>Like I said above, it’s easy to take the full or partial IP address info and figure out who’s asking for that web site. This means that the DNS server and anyone along the path to that DNS server — called on-path routers — can create a profile of you. They can create a record of all of the web sites that they’ve seen you look up.</p>
+        <p>And that data is valuable. Many people and companies will pay lots of money to see what you are browsing for.</p>
+        <p><a href="https://hacks.mozilla.org/files/2018/05/03_02.png"><img decoding="async" loading="lazy" class="alignnone size-large wp-image-32309" src="https://hacks.mozilla.org/files/2018/05/03_02-500x295.png" alt="a router offering to sell data" width="500" height="295" srcset="https://hacks.mozilla.org/files/2018/05/03_02-500x295.png 500w, https://hacks.mozilla.org/files/2018/05/03_02-250x147.png 250w, https://hacks.mozilla.org/files/2018/05/03_02-768x452.png 768w" sizes="(max-width: 500px) 100vw, 500px"></a></p>
+        <p>Even if you didn’t have to worry about the possibly nefarious DNS servers or on-path routers, you still risk having your data harvested and sold. That’s because the resolver itself — the one that the network gives to you — could be untrustworthy.</p>
+        <p>Even if you trust your network’s recommended resolver, you’re probably only using that resolver when you’re at home. Like I mentioned before, whenever you go to a coffee shop or hotel or use any other network, you’re probably using a different resolver. And who knows what its data collection policies are?</p>
+        <p>Beyond having your data collected and then sold without your knowledge or consent, there are even more dangerous ways the system can be exploited.</p>
+        <h4>Spoofing</h4>
+        <p>With spoofing, someone on the path between the DNS server and you changes the response. Instead of telling you the real IP address, a spoofer will give you the wrong IP address for a site. This way, they can block you from visiting the real site or send you to a scam one.</p>
+        <p><a href="https://hacks.mozilla.org/files/2018/05/03_03.png"><img decoding="async" loading="lazy" class="alignnone size-large wp-image-32310" src="https://hacks.mozilla.org/files/2018/05/03_03-500x295.png" alt="spoofer sending user to wrong site" width="500" height="295" srcset="https://hacks.mozilla.org/files/2018/05/03_03-500x295.png 500w, https://hacks.mozilla.org/files/2018/05/03_03-250x147.png 250w, https://hacks.mozilla.org/files/2018/05/03_03-768x452.png 768w" sizes="(max-width: 500px) 100vw, 500px"></a></p>
+        <p>Again, this is a case where the resolver itself might act nefariously.</p>
+        <p>For example, let’s say you’re shopping for something at Megastore. You want to do a price check to see if you can get it cheaper at a competing online store, big-box.com.</p>
+        <p>But if you’re on Megastore WiFi, you’re probably using their resolver. That resolver could hijack the request to big-box.com and lie to you, saying that the site is unavailable.</p>
+        <h3 id="trr-and-doh">How can we fix this with Trusted Recursive Resolver (TRR) and DNS over HTTPS&nbsp;(DoH)?</h3>
+        <p>At Mozilla, we feel strongly that we have a responsibility to protect our users and their data. We’ve been working on fixing these vulnerabilities.</p>
+        <p>We are introducing two new features to fix this — Trusted Recursive Resolver (TRR) and DNS over HTTPS (DoH). Because really, there are three threats here:</p>
+        <ol class="postList">
+        <li id="eaab" class="graf graf--li graf-after--p">You could end up using an untrustworthy resolver that tracks your requests, or tampers with responses from DNS servers.</li>
+        <li id="15e6" class="graf graf--li graf-after--li">On-path routers can track or tamper in the same way.</li>
+        <li id="2131" class="graf graf--li graf-after--li">DNS servers can track your DNS requests.</li>
+        </ol>
+        <p><a href="https://hacks.mozilla.org/files/2018/05/03_04.png"><img decoding="async" loading="lazy" class="alignnone size-large wp-image-32311" src="https://hacks.mozilla.org/files/2018/05/03_04-500x249.png" alt="the three threats—resolvers, on-path routers, and DNS servers" width="500" height="249" srcset="https://hacks.mozilla.org/files/2018/05/03_04-500x249.png 500w, https://hacks.mozilla.org/files/2018/05/03_04-250x125.png 250w, https://hacks.mozilla.org/files/2018/05/03_04-768x383.png 768w" sizes="(max-width: 500px) 100vw, 500px"></a></p>
+        <p>So how do we fix these?</p>
+        <ol class="postList">
+        <li id="64e1" class="graf graf--li graf-after--p">Avoid untrustworthy resolvers by using Trusted Recursive Resolver.</li>
+        <li id="23d3" class="graf graf--li graf-after--li">Protect against on-path eavesdropping and tampering using DNS over HTTPS.</li>
+        <li id="e4dd" class="graf graf--li graf-after--li">Transmit as little data as possible to protect users from deanonymization.</li>
+        </ol>
+        <h4>Avoid untrustworthy resolvers by using Trusted Recursive Resolver</h4>
+        <p>Networks can get away with providing untrustworthy resolvers that steal your data or spoof DNS because very few users know the risks or how to protect themselves.</p>
+        <p>Even for users who do know the risks, it’s hard for an individual user to negotiate with their ISP or other entity to ensure that their DNS data is handled responsibly.</p>
+        <p>However, we’ve spent time studying these risks… and we have negotiating power. We worked hard to find a company to work with us to protect users’ DNS data. And we found one: <a href="https://www.cloudflare.com/" target="_blank">Cloudflare</a>.</p>
+        <p>Cloudflare is providing a recursive resolution service with a pro-user privacy policy. They have committed to throwing away all personally identifiable data after 24 hours, and to never pass that data along to third-parties. And there will be regular audits to ensure that data is being cleared as expected.</p>
+        <p>With this, we have a resolver that we can trust to protect users’ privacy. This means Firefox can ignore the resolver that the network provides and just go straight to Cloudflare. With this trusted resolver in place, we don’t have to worry about rogue resolvers selling our users’ data or tricking our users with spoofed DNS.</p>
+        <p>Why are we picking one resolver? Cloudflare is as excited as we are about building a privacy-first DNS service. They worked with us to build a DoH resolution service that would serve our users well in a transparent way. They’ve been very open to adding user protections to the service, so we’re happy to be able to collaborate with them.</p>
+        <p>But this doesn’t mean you have to use Cloudflare. Users can configure Firefox to use whichever DoH-supporting recursive resolver they want. As more offerings crop up, we plan to make it easy to discover and switch to them.</p>
+        <h4>Protect against on-path eavesdropping and tampering using DNS over&nbsp;HTTPS</h4>
+        <p>The resolver isn’t the only threat, though. On-path routers can track and spoof DNS because they can see the contents of the DNS requests and responses. But the Internet already has technology for ensuring that on-path routers can’t eavesdrop like this. It’s the encryption that I talked about before.</p>
+        <p>By using HTTPS to exchange the DNS packets, we ensure that no one can spy on the DNS requests that our users are making.</p>
+        <h4>Transmit as little data as possible to protect users from deanonymization</h4>
+        <p>In addition to providing a trusted resolver which communicates using the DoH protocol, Cloudflare is working with us to make this even more secure.</p>
+        <p>Normally, a resolver would send the whole domain name to each server—to the Root DNS, the TLD name server, the second-level name server, etc. But Cloudflare will be doing something different. It will only send the part that is relevant to the DNS server it’s talking to at the moment. This is called <a href="https://datatracker.ietf.org/doc/rfc7816/?include_text=1" target="_blank">QNAME minimization</a>.</p>
+        <p><a href="https://hacks.mozilla.org/files/2018/05/03_05.png"><img decoding="async" loading="lazy" class="alignnone size-large wp-image-32312" src="https://hacks.mozilla.org/files/2018/05/03_05-500x373.png" alt="image showing resolver only asking the relevant question" width="500" height="373" srcset="https://hacks.mozilla.org/files/2018/05/03_05-500x373.png 500w, https://hacks.mozilla.org/files/2018/05/03_05-250x186.png 250w, https://hacks.mozilla.org/files/2018/05/03_05-768x572.png 768w" sizes="(max-width: 500px) 100vw, 500px"></a></p>
+        <p>The resolver will also often include the first 24 bits of your IP address in the request. This helps the DNS server know where you are and pick a CDN closer to you. But this information can be used by DNS servers to link different requests together.</p>
+        <p>Instead of doing this, Cloudflare will make the request from one of their own IP addresses near the user. This provides geolocation without tying it to a particular user. In addition to this, we’re looking into how we can enable even better, very fine-grained load balancing in a privacy-sensitive way.</p>
+        <p>Doing this — removing the irrelevant parts of the domain name and not including your IP address — means that DNS servers have much less data that they can collect about you.</p>
+        <p><a href="https://hacks.mozilla.org/files/2018/05/03_06.png"><img decoding="async" loading="lazy" class="alignnone size-large wp-image-32313" src="https://hacks.mozilla.org/files/2018/05/03_06-500x267.png" alt="DNS request with client subnet and first part of domain cross out" width="500" height="267" srcset="https://hacks.mozilla.org/files/2018/05/03_06-500x267.png 500w, https://hacks.mozilla.org/files/2018/05/03_06-250x133.png 250w, https://hacks.mozilla.org/files/2018/05/03_06-768x410.png 768w" sizes="(max-width: 500px) 100vw, 500px"></a></p>
+        <h3>What isn’t fixed by TRR with DoH?</h3>
+        <p>With these fixes, we’ve reduced the number of people who can see what sites you’re visiting. But this doesn’t eliminate data leaks entirely.</p>
+        <p>After you do the DNS lookup to find the IP address, you still need to connect to the web server at that address. To do this, you send an initial request. This request includes a server name indication, which says which site on the server you want to connect to. And this request is unencrypted.</p>
+        <p>That means that your ISP can still figure out which sites you’re visiting, because it’s right there in the server name indication. Plus, the routers that pass that initial request from your browser to the web server can see that info too.</p>
+        <p>However, once you’ve made that connection to the web server, then everything is encrypted. And the neat thing is that this encrypted connection can be used for any site that is hosted on that server, not just the one that you initially asked for.</p>
+        <p>This is sometimes called HTTP/2 connection coalescing, or simply connection reuse. When you open a connection to a server that supports it, that server will tell you what other sites it hosts. Then you can visit those other sites using that existing encrypted connection.</p>
+        <p>Why does this help? You don’t need to start up a new connection to visit these other sites. This means you don’t need to send that unencrypted initial request with its server name indication saying which site you’re visiting. Which means you can visit any of the other sites on the same server without revealing what sites you’re looking at to your ISP and on-path routers.</p>
+        <p>With the rise of CDNs, more and more independent sites are being served by a single server. And since you can have multiple coalesced connections open, you can be connected to multiple shared servers or CDNs at once, visiting all of the sites across the different servers without leaking data. This means this will be more and more effective as a privacy shield.</p>
+        <h3>What is the&nbsp;status?</h3>
+        <p>You can enable DNS over HTTPS in Firefox today, and we <a href="https://blog.nightly.mozilla.org/2018/06/01/improving-dns-privacy-in-firefox/" target="_blank">encourage you to</a>.</p>
+        <p>We’d like to turn this on as the default for all of our users. We believe that every one of our users deserves this privacy and security, no matter if they understand DNS leaks or not.</p>
+        <p>But it’s a big change and we need to test it out first. That’s why we’re conducting a study. We’re asking half of our <a href="https://www.mozilla.org/firefox/channel/desktop/#nightly" target="_blank">Firefox Nightly</a> users to help us collect data on performance.</p>
+        <p>We’ll use the default resolver, as we do now, but we’ll also send the request to Cloudflare’s DoH resolver. Then we’ll compare the two to make sure that everything is working as we expect.</p>
+        <p>For participants in the study, the Cloudflare DNS response won’t be used yet. We’re simply checking that everything works, and then throwing away the Cloudflare response.</p>
+        <p><a href="https://hacks.mozilla.org/files/2018/05/05_01.png"><img decoding="async" loading="lazy" class="alignnone size-large wp-image-32314" src="https://hacks.mozilla.org/files/2018/05/05_01-500x293.png" alt="diagram showing a person timing both and then throwing away Cloudflare response" width="500" height="293" srcset="https://hacks.mozilla.org/files/2018/05/05_01-500x293.png 500w, https://hacks.mozilla.org/files/2018/05/05_01-250x146.png 250w, https://hacks.mozilla.org/files/2018/05/05_01-768x450.png 768w" sizes="(max-width: 500px) 100vw, 500px"></a></p>
+        <p>We are thankful to have the support of our Nightly users — the people who help us test Firefox every day — and we hope that you will help us test this, too.</p>
+        </article>
+        
+        <p class="info-source">Source: <a href="https://hacks.mozilla.org/2018/05/a-cartoon-intro-to-dns-over-https/" target="_blank" rel="noopener noreferrer">https://hacks.mozilla.org/2018/05/a-cartoon-intro-to-dns-over-https/</a></p>
+
+        <hr>
+        <div class="copyrights">
+            <p>&copy; 2024 All rights reserved &mdash; <b><i>PorcelainCat</i></b></p>
+            <p>at <a href="../../index.html">porcelaincat.com</a></p>
+        </div>
+        <p class="blog-author">Created by <a href="https://github.com/miyukiconnelly" target="_blank" rel="noopener noreferrer">Miyuki Connelly</a>, a passionate developer based in the USA.</p>
+    </div>
+</body>
+</html>
